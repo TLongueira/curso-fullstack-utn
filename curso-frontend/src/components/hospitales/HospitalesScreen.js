@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useForm } from '../../hooks/useForm'
 import { HospitalesList } from './HospitalesList'
 import Modal from 'react-modal';
@@ -13,7 +13,16 @@ const customStyles = {
     },
 };
 
-export const HospitalesScreen = () => {
+export const HospitalesScreen = ({history}) => {
+
+    
+    let idUsuario = localStorage.getItem("idLogeado");
+    useEffect(() => {
+        if (!idUsuario) {
+            history.push("/login")
+        }
+        
+    }, [])
 
     const [key, setKey] = useState()
     const [file, setFile] = useState(null)

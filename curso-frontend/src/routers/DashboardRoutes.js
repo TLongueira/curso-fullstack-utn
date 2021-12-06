@@ -1,6 +1,5 @@
 import React from 'react';
 import { Navbar } from '../components/ui/Navbar';
-import { Inicio } from '../components/ui/InicioScreen';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { HospitalesScreen } from '../components/hospitales/HospitalesScreen';
 import { HospitalScreen } from '../components/hospitales/HospitalScreen';
