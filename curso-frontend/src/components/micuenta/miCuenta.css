@@ -1,0 +1,10 @@
+.fotoPerfil{
+    width: 50%;
+    border-radius: 50px;
+}
+
+.acciones{
+    width: 20%;
+    margin: 0px 10px 0px 10px;
+}
+/* Container needed to position the button. Adjust the width as needed */
