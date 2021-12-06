@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 import { MedicosList } from '../medicos/MedicosList';
-import { HospitalesList } from './HospitalesList';
 
 export const HospitalScreen = ({ history }) => {
     const { hospitalId } = useParams();

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 import { HospitalesList } from '../hospitales/HospitalesList';
 
 export const MedicoScreen = ({ history }) => {
